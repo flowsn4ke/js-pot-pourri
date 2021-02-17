@@ -1,1 +1,1 @@
-My implementations of popular / useful algorithmsin JavaScript.
+My implementations of popular / useful algorithms in JavaScript.
