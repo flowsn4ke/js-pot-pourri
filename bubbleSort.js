@@ -1,4 +1,4 @@
-// O(n**2) search
+// O(n**2) sort
 // Useful on almost sorted arrays (yet performs worst than insertion sort)
 const bubbleSort = (arr) => {
     const swap = (arr, i1, i2) => {

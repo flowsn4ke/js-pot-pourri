@@ -1,4 +1,4 @@
-// O(n log n) search
+// O(n log n) sort
 const merge = (arr1, arr2) => {
     if (arr1.length === 0) return arr2
     if (arr2.length === 0) return arr1
