@@ -1,1 +1,1 @@
-My implementations of popular / useful algorithms in JavaScript.
+💾 A collection of popular / useful / cool algorithms written in JavaScript.
