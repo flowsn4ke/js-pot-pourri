@@ -1,4 +1,4 @@
-const l211 = (long, pattern) => {
+const simpleSubstringSearch = (long, pattern) => {
     if (long.length < pattern.length) return 0
     let occurences = 0
     let pointer = 0
