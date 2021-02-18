@@ -1,3 +1,4 @@
+// O(n*k)
 const radixSort = (arr) => {
     const getDigit = (num, i) => Math.floor(Math.abs(num) / Math.pow(10, i)) % 10
 
