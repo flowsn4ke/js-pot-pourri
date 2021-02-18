@@ -12,18 +12,6 @@ const radixSort = (arr) => {
         return max
     }
 
-    const flatten = arr => {
-        let flat = []
-        const helper = (input) => {
-            if (input.length === 0) return
-            if (Array.isArray(input[0])) helper(input[0])
-            else flat.push(input[0])
-            helper(input.slice(1))
-        }
-        helper(arr)
-        return flat
-    }
-
     const size = getMostDigits(arr)
 
     for (let i = 0; i < size; i++) {
@@ -34,7 +22,7 @@ const radixSort = (arr) => {
             const target = getDigit(num, i)
             buckets[target].push(num)
         }
-        arr = flatten(buckets)
+        arr = [].concat(...buckets)
     }
     return arr
 }
