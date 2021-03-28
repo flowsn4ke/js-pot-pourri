@@ -3,6 +3,10 @@ const simpleSubstringSearch = (long, pattern) => {
     let occurences = 0
     let pointer = 0
     for (let i = 0; i < long.length; i++) {
+        if (pointer !== 0 && str[i] === pattern[0]) {
+            pointer = 1
+            continue
+        }
         if (long[i].toLowerCase() !== pattern[pointer].toLowerCase()) {
             pointer = 0
             continue
