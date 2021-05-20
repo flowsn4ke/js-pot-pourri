@@ -1,1 +1,1 @@
-💾 A collection of popular / useful / cool algorithms & data structures written in JavaScript.
+💾 A collection of popular / useful / cool algorithms & data structures I implemented in JavaScript.
