@@ -18,11 +18,11 @@ class PriorityQueue {
     return (idx - (idx % 2 === 0 ? 2 : 1)) / 2
   }
   find_children_idx(idx) {
-    let child_1_idx = (2 * idx + 1)
-    let child_2_idx = (2 * idx + 2)
+    const idx_1 = (2 * idx + 1)
+    const idx_2 = (2 * idx + 2)
 
-    child_1_idx = this.idx_is_valid(child_1_idx) ? child_1_idx : null
-    child_2_idx = this.idx_is_valid(child_2_idx) ? child_2_idx : null
+    const child_1_idx = this.idx_is_valid(idx_1) ? idx_1 : null
+    const child_2_idx = this.idx_is_valid(idx_2) ? idx_2 : null
 
     return [child_1_idx, child_2_idx]
   }
